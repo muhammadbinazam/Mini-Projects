@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task </title>
+    <style>
+        body{
+            background-color: gainsboro;
+            font-family: Roboto,  sans-serif;
+        }
+        h1{
+            color: navy;
+            text-align: center;
+        }
+        h2, a{
+            color: green;
+            text-align: center;
+        }
+        p{
+            color: brown;
+            text-align: center;
+
+        }
+        table{
+            border-collapse: collapse;
+            background-color: white;
+        }
+        #form{
+            width: 300px;
+            height: 210px;
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+            margin: 10px;
+        }
+        button{
+            color: white;
+            background-color: blue;
+            border: 0px;
+            padding: 3px;
+            width: 70px;
+            margin-top: 12px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My First Web Page</h1>
+    <p>This is a simple HTML & CSS mini project for beginners.</p>
+    <p>Visit <a target="_blank" href="https://www.google.com/">Google</a> for more info.</p>
+    <h2>Student Information</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td rowspan="2">10</td>
+            <td>85</td>
+
+        </tr>
+        <tr>
+            <td>Ali</td>
+            
+            <td>90</td>
+            
+        </tr><tr>
+            <td>Ali</td>
+            <td colspan="2">8</td>
+            
+            
+        </tr>
+    </table>
+    <h2>Contact Form</h2>
+    <div id="form">
+    <form action="#">
+        <label for="name">Name:</label> <br>
+        <input type="text" name="name" id="name" placeholder="insert your name"><br> <br>
+        <label for="email" >Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="insert your email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" placeholder="insert your message"></textarea><br> 
+        <button>Submit</button>
+    </form>
+    </div>
+    <h2>Programming is not About typing, its about thinking</h2>
+</body>
+</html>

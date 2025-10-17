@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table & Pseudo class
+        
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            padding: 20px;
+        }
+
+        .table-container {
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 15px;
+           
+        }
+
+
+        #header-row {
+            background-color: #343a40; 
+            color: white; 
+        }
+        thead {
+               background-color: #343a40;
+             color: white;
+        }
+
+        .odd-row {
+            background-color: white;
+        }
+        
+        .even-row {
+            background-color: #c2c2c2; 
+        }
+        
+        tbody tr:hover {
+            background-color: #ffb6c1; 
+            cursor: pointer;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr id="header-row">
+                    <th>Col 1 Heading</th>
+                    <th>Col 2 Heading</th>
+                    <th>Col 3 Heading</th>
+                    <th>Col 4 Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="even-row">
+                    <td>Row 2 Col 1</td>
+                    <td>Row 2 Col 2</td>
+                    <td>Row 2 Col 3</td>
+                    <td>Row 2 Col 4</td>
+                </tr>
+
+                <tr class="odd-row">
+                    <td>Row 3 Col 1</td>
+                    <td>Row 3 Col 2</td>
+                    <td>Row 3 Col 3</td>
+                    <td>Row 3 Col 4</td>
+                </tr>
+
+                <tr class="even-row">
+                    <td>Row 4 Col 1</td>
+                    <td>Row 4 Col 2</td>
+                    <td>Row 4 Col 3</td>
+                    <td>Row 4 Col 4</td>
+                </tr>
+           
+                <tr class="odd-row" >
+                    <td>Row 5 Col 1</td>
+                    <td>Row 5 Col 2</td>
+                    <td>Row 5 Col 3</td>
+                    <td>Row 5 Col 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

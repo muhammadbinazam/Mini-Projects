@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header-container {
+            background-color: #2c3e50;
+            color: white;
+            padding: 0 50px 80px 50px;
+        }
+
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .header-logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .nav-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.1s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-title {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+
+
+        .subtext {
+            font-size: 1.1em;
+            color: #bdc3c7;
+            margin-bottom: 20px;
+        }
+
+        .signup-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.1s;
+        }
+
+        .signup-button:hover {
+            background-color: #2980b9;
+        }
+
+        .placeholder-image {
+            
+            width: 700px;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/049/191/168/small_2x/a-modern-workspace-featuring-advanced-technology-including-a-holographic-calendar-and-illuminated-data-streams-creating-an-innovative-and-dynamic-environment-for-productivity-photo.jpg);
+            height: 350px;
+            object-fit: cover;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <nav class="top-nav">
+            <div class="header-logo">HW</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1 class="main-title">This website is awesome</h1>
+                <p class="subtext">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, excepturi libero.
+                    Perspiciatis eum modi possimus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, autem!
+                </p>
+                <button class="signup-button">Sign up</button>
+            </div>
+
+            <div class="placeholder-image">
+             </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

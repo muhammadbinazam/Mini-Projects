@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e5e5e5; 
+        }
+
+       
+        .navigation {
+            float: left; 
+            width: 150px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-right: 20px;
+            
+        }
+
+        .navigation li {
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            overflow: hidden; 
+            display: flex;
+        }
+
+        .navigation a {
+            display: block;
+            float: left;
+            width: 85%; 
+            padding: 8px 10px;
+            background-color: #f7f3e8; 
+            text-decoration: none;
+            color: #666;
+            transition: background-color 0.1s;
+        }
+
+        .navigation a:hover {
+            background-color: #ffe0b2; 
+        }
+
+        .separator {
+            float: right;
+            width: 15%; 
+            height: 34px; 
+            background-color: green;
+        }
+
+      
+        .main-content {
+            overflow: hidden; 
+            padding: 0 10px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        .welcome-text {
+            color: #777;
+            font-style: italic;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .date-text {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="navigation">
+        <li>
+            <a href="#">Home page</a>
+            <div class="separator"></div>
+        </li>
+        <li>
+            <a href="#">About</a>
+            <div class="separator"></div>
+        </li>
+        <li>
+            <a href="#">Contact us</a>
+            <div class="separator"></div>
+        </li>
+        <li>
+            <a href="#">Others</a>
+            <div class="separator"></div>
+        </li>
+    </ul>
+
+    <div class="main-content">
+        <h1>My first page styled with CSS</h1>
+        
+        <p class="welcome-text">Welcome to my page!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nostrum placeat odio voluptatem, explicabo distinctio accusamus, numquam quaerat facere, expedita atque molestias quia deserunt. Id explicabo molestiae est ad deleniti!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis esse adipisci officiis cumque excepturi temporibus inventore, sit eligendi incidunt laborum eum cupiditate dignissimos, ducimus impedit nihil, aperiam eos unde.</p>
+        
+        <p class="date-text">10/11/2025</p>
+    </div>
+
+</body>
+</html>

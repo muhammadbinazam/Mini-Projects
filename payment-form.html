@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        /* Simple, student-level internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            background-color: #ff9999; 
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #555;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+        }
+
+        .step-section {
+            background-color: #ffb3b3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .step-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #a00000;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ff9999;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px 0;
+            background-color: #ffc2c2;
+            border-radius: 4px;
+        }
+
+        label {
+            width: 120px;
+            padding-left: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        .card-type label {
+            width: auto;
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+        .buy-button {
+            display: block;
+            width: 50%;
+            margin: 20px auto 0;
+            padding: 15px;
+            background-color: #a00000; 
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px #800000;
+            transition: background-color 0.1s;
+        }
+
+        .buy-button:hover {
+            background-color: #800000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment form</h1>
+
+        <form>
+          <div class="step-section">
+                <p class="step-title">Step 1: Your details</p>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="First and last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="e.g. +92 3XX XXXXXXX">
+                </div>
+            </div>
+
+            
+            <div class="step-section">
+                <p class="step-title">Step 2: Delivery address</p>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="postcode">Post code</label>
+                    <input type="text" id="postcode" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" required>
+                </div>
+            </div>
+
+           
+            <div class="step-section">
+                <p class="step-title">Step 3: Card details</p>
+                <div class="form-group card-type">
+                    <label>Card type</label>
+                    <input type="radio" id="visa" name="card_type" value="visa" checked>
+                    <label for="visa">VISA</label>
+                    <input type="radio" id="debit" name="card_type" value="debit">
+                    <label for="debit">Debit</label>
+                    <input type="radio" id="mastercard" name="card_type" value="mastercard">
+                    <label for="mastercard">Mastercard</label>
+                </div>
+                <div class="form-group">
+                    <label for="card_number">Card number</label>
+                    <input type="text" id="card_number" required placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="security_code">Security code</label>
+                    <input type="text" id="security_code" required placeholder="XXX">
+                </div>
+                <div class="form-group">
+                    <label for="name_on_card">Name on card</label>
+                    <input type="text" id="name_on_card" placeholder="Exact name as on the card" required>
+                </div>
+            </div>
+
+            <button type="submit" class="buy-button">BUY IT!</button>
+        </form>
+    </div>
+</body>
+</html>

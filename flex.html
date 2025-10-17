@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(25, 24, 24);
+        height: 250px;
+        color: white;
+        font-size: 20px;
+        align-items: center;
+      }
+      img {
+        margin: 10px;
+        height: 200px;
+        border-radius: 50px;
+      }
+      ul {
+        display: flex;
+
+        gap: 30px;
+        margin-right: 20px;
+      }
+      li {
+        padding-top: 35px;
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      
+      a:hover {
+        color: aqua;
+      }
+      
+      footer {
+        padding: 20px;
+        background-color: rgb(25, 24, 24);
+        color: white;
+
+        height: 200px;
+        width: 100%;
+      }
+      .footertext {
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      p {
+        margin: 20px;
+        font-size: 20px;
+        
+        line-height: 1.6;
+      }
+      h1 {
+        margin: 20px;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navlogo">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_oxs6heZpCkA86uasZZF-yunA2O_XFBgNzMCYzlKpJ12GhFZTfkQbdI4MBRtX8-H6HD0QPGAYgVR2mRiCK5dbtS9pOOxf_f1M6Mqdqw"
+          alt="image"
+        />
+      </div>
+      <div class="navlinks">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Biography </a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <h1 style="text-align: center">Leonardo de Vinci</h1>
+      <p>
+        Leonardo da Vinci (1452–1519) was an Italian polymath, born in the small
+        town of Vinci, near Florence. He grew up with a deep sense of curiosity
+        about the natural world and quickly developed skills as an artist and
+        thinker. As a young apprentice in Florence, Leonardo was trained in
+        painting, sculpture, and mechanical arts. His insatiable thirst for
+        knowledge led him to study anatomy, mathematics, botany, and
+        engineering, making him one of the most remarkable minds of the
+        Renaissance.
+      </p>
+      <p>
+        Leonardo’s artistic achievements are celebrated worldwide. His
+        masterpieces such as Mona Lisa and The Last Supper are considered iconic
+        works of art, admired for their lifelike detail, mastery of perspective,
+        and emotional depth. Beyond painting, Leonardo sketched designs for
+        flying machines, bridges, and advanced weaponry — inventions that showed
+        how far ahead of his time he truly was. His detailed anatomical drawings
+        remain a valuable resource for medical studies even today, highlighting
+        his unmatched observational skills.
+      </p>
+      <p>
+        Leonardo da Vinci’s legacy extends beyond his art and inventions. He is
+        remembered as the ultimate Renaissance Man, someone who combined
+        creativity with scientific curiosity. His notebooks, filled with
+        sketches, experiments, and ideas, continue to inspire inventors,
+        artists, and scientists. Leonardo’s life teaches us that knowledge has
+        no boundaries, and true innovation comes from blending imagination with
+        careful study.
+      </p>
+    </div>
+
+    <footer>
+      <p style="color: aqua; font-size: 25px;" class="footertext">About Leonardo</p>
+      <p class="footertext">
+        Leonardo believed that art and science are interconnected, and his life
+        embodied that vision. He encouraged humanity to be curious, to observe
+        the world closely, and to seek beauty in both creativity and discovery.
+      </p>
+    </footer>
+  </body>
+</html>

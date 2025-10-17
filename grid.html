@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+            grid-template-areas: "Header Header Header"
+                "Article1 Article1 aside"
+                "Article2 Article2 aside"
+                "Article3 Article3 aside"
+                "Article4 Article4 aside"
+                "Article5 Article5 aside"
+                "Article6 Article6 aside"
+                "Footer Footer Footer";
+            width: 90vw;
+            text-align: center;
+
+            gap: 10px;
+
+
+
+        }
+        
+
+        .container>div {
+            border-radius: 10px;
+            color: black;
+            align-content: center;
+            font-size: larger;
+            
+
+
+        }
+        .header {
+              grid-area: Header;
+            background-color: rgb(216, 132, 255);
+           }
+
+
+        
+
+
+        .article1 {
+            grid-area: Article1;
+            background-color: rgb(194, 194, 194);
+
+        }
+
+        .article2 {
+            grid-area: Article2;
+            background-color: rgb(194, 194, 194);
+            background-color: rgb(194, 194, 194);
+
+        }
+
+        .article3 {
+            grid-area: Article3;
+            background-color: rgb(194, 194, 194);
+
+        }
+
+        .article4 {
+            grid-area: Article4;
+            background-color: rgb(194, 194, 194);
+
+        }
+
+        .article5 {
+            grid-area: Article5;
+            background-color: rgb(194, 194, 194);
+
+        }
+
+        .article6 {
+            grid-area: Article6;
+            background-color: rgb(194, 194, 194);
+
+        }
+
+
+
+        .footer {
+            grid-area: Footer;
+            background-color: rgb(255, 196, 0);
+            padding-top: 10px;
+
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: rgb(170, 200, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+       
+            <div class="article1">Article 1</div>
+            <div class="article2">Article 2</div>
+            <div class="article3">Article 3</div>
+            <div class="article4">Article 4</div>
+            <div class="article5">Article 5</div>
+            <div class="article6">Article 6</div>
+
+       
+
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

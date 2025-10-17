@@ -1,0 +1,163 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #007bff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .quiz-card {
+            background-color: white;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .app-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .time-box {
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .time-box span {
+            background-color: #343a40;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+
+        .question-text {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .option {
+            background-color: #f8f9fa; 
+            color: #495057;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+            cursor: pointer;
+            transition: background-color 0.1s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .option:hover {
+            background-color: #e9ecef;
+        }
+
+        
+        .correct {
+            background-color: #d4edda; 
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+
+        .incorrect {
+            background-color: #f8d7da; 
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+
+        .icon {
+            font-size: 1.2em;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .question-counter {
+            color: #6c757d;
+        }
+
+        .next-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-card">
+        <div class="header-top">
+            <span class="app-title">Awesome Quiz Application</span>
+            <div class="time-box">Time Left <span>08</span></div>
+        </div>
+
+        <div class="question-text">
+            1. What does HTML stand for?
+        </div>
+
+    
+        <div class="option">
+            Hyper Text Preprocessor
+        </div>
+        <div class="option correct">
+            Hyper Text Markup Language
+            <i class="fas fa-check-circle icon"></i>
+        </div>
+        <div class="option incorrect">
+            Hyper Text Multiple Language
+            <i class="fas fa-times-circle icon"></i>
+        </div>
+        <div class="option">
+            Hyper Tool Multi Language
+        </div>
+
+        <div class="footer-bottom">
+            <div class="question-counter">1 of 5 Questions</div>
+            <button class="next-button">Next Que</button>
+        </div>
+    </div>
+</body>
+</html> 
